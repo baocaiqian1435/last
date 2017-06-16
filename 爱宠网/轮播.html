@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>图片轮播代码</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+</head>
+<style type="text/css">
+    #lunbo ul li:not(:first-child){
+        display: none;
+    }
+    li.lunbo{
+        list-style: none;
+    }
+    ul.lunbo{
+        position: relative;
+        top: 30px;
+        left: 2px;
+    }
+    p.lunbo{
+        margin: 0;
+        text-align: center;
+    }
+    #lunbo{
+        width: 280px;
+        height: 300px;
+        padding: 0px;
+        background-image: url(images/lunbo1.jpg);
+    }
+    div.lunbo_title{
+        position: relative;
+        top: 32px;
+        left: 35px;
+        color: #7388ce;
+        font-size: 16px;
+    }
+</style>
+
+<body>
+<div id="lunbo">
+<div class="lunbo_title"> 
+<img src="images/lunbo_title.png">
+爱宠趣事
+</div>
+    <ul class="lunbo">
+        <li class="lunbo"><img src="images/01.jpg">
+        <p class="lunbo">给你一个爱的抚摸</p>
+        </li>
+        <li class="lunbo"><img src="images/02.jpg">
+        <p class="lunbo">主银~送你一朵小fa~</p></li>
+        <li class="lunbo"><img src="images/03.jpg">
+        <p class="lunbo">看不见我看不见我~</p></li>
+        <li class="lunbo"><img src="images/05.jpg">
+        <p class="lunbo">宝宝乖~妈妈给你舔舔</p></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    //因为使用了document，所以js需要放在需要执行的代码下面生效才能生效
+    var li=document.getElementById('lunbo').getElementsByTagName("li");
+    var num=0;
+    var len=li.length;
+
+    setInterval(function(){
+        li[num].style.display="none";
+        num=++num==len?0:num;
+        li[num].style.display="inline-block";
+
+    },3000);//切换时间
+</script>
+</body>
+</html>

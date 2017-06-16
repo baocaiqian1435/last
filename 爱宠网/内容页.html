@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>爱宠俱乐部内容页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+		background-color: #fffffd;
+	}
+	a{
+		text-decoration: none;
+		color: #522a06;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+		#header{
+			width: 1000px;
+			height: 300px;
+			margin: 0 auto;
+		}
+		div.banner{
+			background-image: url(images/banner.png);
+			width: 1000px;
+			height: 300px;
+			margin: 0 auto;
+			float: none;
+		}
+		}
+		div.nav{
+			width: 1000px;
+			height: 25px;
+			position: relative;
+			text-align: center;
+			margin: 0;
+		}
+		li.nav{
+			display: inline-block;
+			padding: 10px;
+			float: left;
+			position: relative;
+			top: 10px;
+		}
+		.img{
+			display: inline-block;
+			float: left;
+		}
+		a.nav{
+			text-decoration: none;
+		}
+		a.nav:hover{
+			color: #522a06;
+			font-size: 18px;
+		}
+		#content{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		div.mianbaoxie{
+			font-size: 15px;
+		}
+		a.mianbaoxie{
+			color: #83c75d;
+		}
+		div.content_left{
+			width: 740px;
+			height: 650px;
+			border: 1px ridge gray;
+			margin-top: 10px; 
+			float: left;
+		}
+		div.content_right{
+			width: 250px;
+			height: 650px;
+			border-right: 1px ridge gray;
+			border-top: 1px ridge gray;
+			border-bottom:1px ridge gray;  
+			margin-top: 10px; 
+			float: left;
+			background-color: #ececec;
+
+		}
+		div.content_left_1{
+			width: 350px;
+			height: 700px;
+			text-align: center;
+			float: left;
+		}
+		div.dogname{
+			width: 350px;
+			height: 50px;
+			color: #367517;
+			font: 600 30px '黑体';
+			margin-top: 10px;
+		}
+		div.dogimg{
+			width: 310px;
+			height: 320px;
+			border: 10px ridge #ececec;
+			text-align: center;
+			margin-bottom: 10px; 
+			padding: 10px;
+		}
+		div.changliao{
+			width: 250px;
+			height: 57px;
+			background-image: url(images/changliao_bg.png);
+			margin: 0 auto;
+		}
+		span.changliao{
+			color: white;
+			font-size: 22px;
+			position: relative;
+			top: 16px;
+		}
+		a.changliao{
+			color: white;
+		}
+		a.changliao:hover{
+		    font-size: 25px;
+		    text-decoration: none;
+		}
+		div.xszs{
+			width: 350px;
+			height: 300px;
+			margin: 0 auto;
+		}
+		div.xszs_title{
+			width: 50px;
+			height: 200px;
+			font-size: 30px;
+			text-align: center;
+			background-color: #f1f1f1;
+			color: #b7b7b7;
+			float: left;
+		}
+		div.xszs_li{
+			width: 300px;
+			height: 200px;
+			color: gray;
+			float: left;
+			font-size: 15px;
+			line-height: 28px;
+			text-align: left;
+			background-color: #ececec;
+		}
+		div.content_left_2{
+			height: 650px;
+			width: 350px;
+			float: left;
+			text-align: center;
+		}
+		div.jianjie{
+			width: 300px;
+			height: 350px;
+			background-image: url(images/biankuang.jpg);
+			margin: 0 auto;
+		}
+		div.tubiao{
+			width: 350px;
+			height: 50px;
+		}
+		span.jianjie{
+			font:600 30px '黑体'; 
+			position: relative;
+			top: -5px;
+		}
+		p.xq1{
+			width: 220px;
+			position: relative;
+			top: 40px;
+			left: 65px;
+		}
+		p.xq2{
+			width: 160px;
+			position: relative;
+			top: 25px;
+			left: 115px;
+		}
+		span.more{
+			text-align: right;
+			font-size: 15px;
+		}
+		a.more{
+			color: gray;
+		}
+		div.xxtz{
+			width: 350px;
+			height: 25px;
+			background-color: #f1f1f1;
+			margin: 15px;
+		}
+		span.xq{
+			font: 600 20px '黑体';
+			color: #9c9c9c;
+		}
+		div.list{
+			width: 350px;
+			line-height: 25px;
+			color: gray;
+			font-size: 15px;
+		}
+		li.list{
+			list-style: none;
+			border-bottom:0.1em dashed gray;
+			text-align: left; 
+		}
+		div.jbtz{
+			width: 250px;
+			float: left;
+		}
+		ul.jbtz{
+			width: 200px;
+			text-align: left;
+		}
+		li.jbtz_title{
+			font: 500 22px '黑体';
+			line-height: 35px;
+			border-bottom:1px dashed gray;
+			list-style: none; 
+		}
+		li.jbtz{
+			border-bottom:0.1em dashed gray;
+			font-size: 18px;
+			line-height: 30px;
+			list-style: none;
+		}
+		div.tupian{
+			width: 235px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		        #footer{
+            width: 1000px;
+            height: 200px;
+            border-top: 1px solid gray;
+            background-image: url(images/footer.jpeg);
+            clear: both;
+            margin: 0 auto;
+        }
+        p.footer{
+            text-align: center;
+            line-height: 30px;
+        }
+        ul.footer{
+            line-height: 30px;
+            list-style: none;
+            color: gray;
+        }
+        li.foot_1{
+            font-size: 25px;
+        }
+        div.footer_li{
+            margin: 20px;
+            width: 200px;
+            height: 150px;
+            float: left;
+        }
+        div.footer_xinxi{
+            width: 400px;
+            height: 150px;
+            float: left;
+            margin: 20px;
+        }
+        p.ads{
+            text-align: center;
+            line-height: 30px;
+        }
+        p.owner{
+            text-align: center;
+            line-height: 30px;
+        }
+	</style>
+</head>
+<body>
+<!--header-->
+<div id="header">
+		<div class="nav">
+			<!--导航栏-->
+			<img src="images/f1.jpg" class="img">
+			<ul class="nav">
+				<li class="nav"><a href="file:///E:/2016-2017/web一/爱宠网/1.html" class="nav">爱宠主页</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="file:///E:/2016-2017/web一/爱宠网/列表页.html" class="nav">宠物种类</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">宠物商店</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">爱宠医院</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">宠物乐园</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">爱宠保养</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">寻找爱宠</a></li>
+			</ul>
+		</div>
+	<div class="banner">
+    </div>
+</div>
+
+<!--content-->
+<div id="content">
+	<div class="mianbaoxie">我的位置：<a href="#" class="mianbaoxie">爱宠俱乐部</a>><a href="#" class="mianbaoxie">爱宠种类</a>><a href="#" class="mianbaoxie">狗狗种类</a>><a href="#" class="mianbaoxie">拉布拉多</a>
+	</div>
+	<div class="content_left">
+		<div class="content_left_1">
+		     <div class="dogname">
+			      <span class="lbld">拉布拉多犬</span>
+		     </div>
+		     <div class="dogimg">
+		     <div>
+			     <img src="images/doglbld.jpg">
+		     </div>
+		     <div class="changliao">
+		     	<span class="changliao"><a href="#" class="changliao">进入拉布拉多小畅聊</a></span>
+		     </div>
+		     </div>
+		     <div class="xszs">
+		     	<div class="xszs_title">
+		     		新手小知识
+		     	</div>
+		     	<div class="xszs_li">
+		     		<ul>
+		     			<li class="xszs_li"><a href="#" class="xszs_li">拉布拉多幼犬怎么喂养？要注意什么？</a></li>
+		     			<li class="xszs_li"><a href="#" class="xszs_li">拉布拉多饲养前的准备？</a></li>
+		     			<li class="xszs_li"><a href="#" class="xszs_li">拉布拉多零食怎么选择？</a></li>
+		     			<li class="xszs_li"><a href="#" class="xszs_li">怎么和拉布拉多培养感情？</a></li>
+		     			<li class="xszs_li"><a href="#" class="xszs_li">什么人适合养拉布拉多？</a></li>
+		     			<li class="xszs_li"><a href="#" class="xszs_li">拉布拉多一顿顿吃多少？一天喂几次？</a></li>
+		     		</ul>
+		     	</div>
+		     </div>
+		</div>
+		<div class="content_left_2">
+			<div class="tubiao">
+			     <img src="images/lbldbiao.jpg">
+			     <span class="jianjie">拉布拉多简介</span>
+			</div>
+			<div class="jianjie">
+			<p class="xq1">拉布拉多猎犬（简称：拉布拉多）是一种中大型犬类，天生个性温和、活泼、没有攻击性和智商高，是适合被选作导盲犬或其他工作犬的狗品种，跟黄金猎犬、哈士奇并列三大无攻击性犬类之一。毛属短毛，外层直且紧密内则为柔软且</p><p class="xq2">能防水御寒的内层毛皮，如水獭般的跟脚趾间的蹼使它们非常适于游水......<span class="more"><a href="#" class="more">更多>></a></span></p>
+		    </div>
+		    <div>
+		    	<div class="xxtz"><span class="xq">详细特征</span></div>
+		    	<div class="list">
+		    	<ul>
+		    		<li class="list">粘人程度：<img src="images/p1.png">|易适应度：<img src="images/p2.png"></li>
+		    		<li class="list">掉毛程度：<img src="images/p3.png">|体味程度：<img src="images/p1.png"></li>
+		    		<li class="list">犬叫程度：<img src="images/p4.png">|可训练度：<img src="images/p2.png"></li>
+		    		<li class="list">对人友善：<img src="images/p2.png">|关爱需求：<img src="images/p1.png"></li>
+		    		<li class="list">耐寒程度：<img src="images/p5.png">|城市适应：<img src="images/p5.png"></li>
+		    		<li class="list">口水程度：<img src="images/p4.png">|可运动量：<img src="images/p5.png"></li>
+		    	</ul>
+		    	</div>
+		    </div>
+		</div>
+	</div>
+	<div class="content_right">
+		<div class="jbtz">
+		 <ul class="jbtz">
+			<li class="jbtz_title">拉布拉多基本特征：</li>
+			<li class="jbtz">全名：拉布拉多犬</li>
+			<li class="jbtz">别名：拉布拉多|拉...</li>
+			<li class="jbtz">英文名：Labrador</li>
+			<li class="jbtz">类型：中型</li>
+			<li class="jbtz">功能：伴侣犬|枪...</li>
+			<li class="jbtz">毛长：短毛</li>
+			<li class="jbtz">身高：54-57cm</li>
+			<li class="jbtz">体重：25-34kg</li>
+			<li class="jbtz">寿命：10-12年</li>
+			<li class="jbtz">原产地：英国</li>
+			<li class="jbtz">参考价格：1400元起</li>
+		</ul>
+		</div>
+		<div class="tupian">
+			<a href="#"><img src="images/img.png"></a>
+		</div>
+	</div>
+</div>
+<!--footer-->
+<div id="footer">
+<div class="footer_li">
+    <ul class="footer">
+        <li class="foot_1">推荐连接</li>
+        <li>
+        <img src="images/tianmao.png"><a href="https://618.tmall.com/?ali_trackid=2:mm_28347190_2425761_40292235:1497536136_2k2_864047337">天猫商城</a></li>
+        <li>
+        <img src="images/taobao.png"><a href="https://tyh.taobao.com/?ali_trackid=2:mm_30646014_17540794_73582572:1497536217_3k5_43983250#a=&c=0&q=&s=0&page=1&">淘宝官网</a></li>
+        <li>
+        <img src="images/jingdong.png"><a href="http://gou.jd.com/?cu=true&utm_source=e.firefoxchina.cn&utm_medium=uniongou&utm_campaign=t_220520384_&utm_term=e028d7da356a4d49bcc47e51be81c073&abt=3">京东官网</a></li>
+    </ul>
+</div>
+<div class="footer_xinxi">
+    <p class="footer">Copyright [17/6/10] by [cqajh]</p>
+    <p class="ads">地址：河北师范大学</p>
+    <p class="owner">版权所属，请勿侵权</p>
+</div>
+</div>
+</body>
+</html>

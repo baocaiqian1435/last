@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>爱宠俱乐部列表页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{
+		background-color: #fffffd;
+	}
+	a{
+		text-decoration: none;
+		color: #522a06;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+		#header{
+			width: 1000px;
+			height: 300px;
+			margin: 0 auto;
+		}
+		div.banner{
+			background-image: url(images/banner.png);
+			width: 1000px;
+			height: 300px;
+			margin: 0 auto;
+			float: none;
+		}
+		}
+		div.nav{
+			width: 1000px;
+			height: 25px;
+			position: relative;
+			text-align: center;
+			margin: 0;
+		}
+		li.nav{
+			display: inline-block;
+			padding: 10px;
+			float: left;
+			position: relative;
+			top: 10px;
+		}
+		.img{
+			display: inline-block;
+			float: left;
+		}
+		a.nav{
+			text-decoration: none;
+		}
+		a.nav:hover{
+			color: #522a06;
+			font-size: 18px;
+		}
+		#content{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		div.mianbaoxie{
+			font-size: 15px;
+		}
+		a.mianbaoxie{
+			color: #83c75d;
+		}
+		div.content_1{
+			height: 200px;
+			width: 1000px;
+			margin: 10px;
+		}
+		div.content_1_left{
+			float: left;
+		}
+		div.content_1_img{
+			float: left; 
+		}
+		div.content_1_li{
+			width: 300px;
+		}
+		li.dog{
+			display: inline-block;
+			font-size: 17px;
+		}
+		li.shugang{
+			display: inline-block;
+			font-size: 17px;
+			color: gray;
+		}
+		ul.content_1_left{
+			margin: 0;
+		}
+		div.content_1_right{
+			height: 200px;
+			float: left;
+		}
+		div.content_1_1{
+			width: 265px;
+			height: 200px;
+			margin-left: 10px;
+			background-image: url(images/look.jpg);
+			float: left;
+
+		}
+		input.sousuo{
+			color: white;
+			background-color: black;
+		}
+		div.dogimg{
+			float: left;
+			width: 200px;
+			height: 136px;
+			position: relative;
+			top: 40px;
+			left: 25px;
+		}
+		div.dogname{
+			width:30px;
+			height: 200px;
+			margin: 10px;
+			font-size: 25px;
+			color: #bd6b09; 
+			font-weight: 600;
+			float: left;
+			position: relative;
+			top: 20px;
+			left: 5px;
+		}
+		div.jiantou{
+			float: left;
+			width: 50px;
+			height: 200px;
+			position: relative;
+			top: 80px;	
+			margin-left: 10px; 		
+		}
+		div.dogmore{
+			width: 6px;
+			height: 200px;
+			margin-left: 20px; 
+			float: left;
+			opacity: 0.5;
+		}
+		div.dogmore:hover{
+			opacity: 1;
+		}
+		div.more{
+			height: 200px;
+			float: left;
+		}
+		span.limore{
+			float: right;
+			font-size: 12px;
+		}
+		a.limore{
+			color: gray;
+
+		}
+		        #footer{
+            width: 1000px;
+            height: 200px;
+            border-top: 1px solid gray;
+            background-image: url(images/footer.jpeg);
+            clear: both;
+            margin: 0 auto;
+        }
+        p.footer{
+            text-align: center;
+            line-height: 30px;
+        }
+        ul.footer{
+            line-height: 30px;
+            list-style: none;
+            color: gray;
+        }
+        li.foot_1{
+            font-size: 25px;
+        }
+        div.footer_li{
+            margin: 20px;
+            width: 200px;
+            height: 150px;
+            float: left;
+        }
+        div.footer_xinxi{
+            width: 400px;
+            height: 150px;
+            float: left;
+            margin: 20px;
+        }
+        p.ads{
+            text-align: center;
+            line-height: 30px;
+        }
+        p.owner{
+            text-align: center;
+            line-height: 30px;
+        }
+		</style>
+</head>
+<body>
+<!--header-->
+<div id="header">
+		<div class="nav">
+			<!--导航栏-->
+			<img src="images/f1.jpg" class="img">
+			<ul class="nav">
+				<li class="nav"><a href="file:///E:/2016-2017/web一/爱宠网/1.html" class="nav">爱宠主页</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">宠物种类</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">宠物商店</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">爱宠医院</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">宠物乐园</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">爱宠保养</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">寻找爱宠</a></li>
+			</ul>
+		</div>
+	<div class="banner">
+    </div>
+</div>
+<!--content-->
+<div id="content">
+<div class="mianbaoxie">我的位置：<a href="#" class="mianbaoxie">爱宠俱乐部</a>><a href="#" class="mianbaoxie">爱宠种类</a></div>
+	<!--content_1_left-->
+	<div class="content_1">
+		<div class="content_1_left">
+			<div class="content_1_img">
+				<a href="#"><img src="images/dogbiao.png"></a>
+			</div>
+			<div class="content_1_li">
+			<input type="text" name="sousuo">
+			<input type="button" name="搜索" value="搜索" class="sousuo">
+				<ul class="content_1_left">
+					<li class="dog"><a href="#">泰迪犬</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">哈士奇</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">松狮</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">比熊</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">金毛</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">萨摩耶</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">德国牧羊犬</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">拉布拉多</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">博美犬</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">吉娃娃</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">阿拉斯加雪橇犬</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">雪纳瑞</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">可卡</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">蝴蝶泉</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">腊肠犬</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">沙皮犬</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">罗威纳犬</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">高加索犬</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">贵妇</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">茶杯犬</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">马士提夫犬</a></li>
+					<li class="shugang">|</li>
+					<span class="limore"><a href="#" class="limore">更多>></a></span>
+			    </ul>
+			</div>
+		</div>
+		<div class="content_1_right">
+			<div class="content_1_1">
+			   <div class="dogimg">
+			   <a href="file:///E:/2016-2017/web一/爱宠网/内容页.html">
+				<img src="images/lbld.jpg"></a>
+			   </div>
+				<div class="dogname">
+					<a href="file:///E:/2016-2017/web一/爱宠网/内容页.html">拉布拉多犬</a>
+				</div>
+			</div>
+			<div class="content_1_1">
+				<div class="dogimg">
+			   <a href="#">
+				<img src="images/hsq.jpg"></a>
+			   </div>
+				<div class="dogname">
+					<a href="#">哈士奇</a>
+				</div>
+			</div>
+			<div class="more">
+			<div class="jiantou">
+				<img src="images/jiantou.png">
+			</div>
+			<div class="dogmore">
+				<a href="#"><img src="images/moredog.png"></a>
+			</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="content_1">
+		<div class="content_1_left">
+			<div class="content_1_img">
+				<a href="#"><img src="images/maobiao.png"></a>
+			</div>
+			<div class="content_1_li">
+			<input type="text" name="sousuo">
+			<input type="button" name="搜索" value="搜索" class="sousuo">
+				<ul class="content_1_left">
+					<li class="dog"><a href="#">美国短毛猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">英国短毛猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">异国短毛猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">波斯猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">狸花猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">俄罗斯蓝猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">美国短尾猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">缅因猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">喜马拉雅猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">美国卷毛猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">日本短尾猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">布偶猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">暹罗猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">挪威森林猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">孟买猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">埃及猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">苏格兰折耳猫</a></li>
+					<span class="limore"><a href="#" class="limore">更多>></a></span>
+			    </ul>
+			</div>
+		</div>
+		<div class="content_1_right">
+			<div class="content_1_1">
+			   <div class="dogimg">
+			   <a href="#">
+				<img src="images/bsm.jpg"></a>
+			   </div>
+				<div class="dogname">
+					<a href="#">波斯猫</a>
+				</div>
+			</div>
+			<div class="content_1_1">
+				<div class="dogimg">
+			   <a href="#">
+				<img src="images/bom.jpg"></a>
+			   </div>
+				<div class="dogname">
+					<a href="#">布偶猫</a>
+				</div>
+			</div>
+			<div class="more">
+			<div class="jiantou">
+				<img src="images/jiantou.png">
+			</div>
+			<div class="dogmore">
+				<a href="#"><img src="images/moredog.png"></a>
+			</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+		<div class="content_1">
+		<div class="content_1_left">
+			<div class="content_1_img">
+				<a href="#"><img src="images/tuzibiao.png"></a>
+			</div>
+			<div class="content_1_li">
+			<input type="text" name="sousuo">
+			<input type="button" name="搜索" value="搜索" class="sousuo">
+				<ul class="content_1_left">
+					<li class="dog"><a href="#">法国垂耳兔</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">新西兰兔</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">英国安哥拉兔</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">狮子兔</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">三线仓鼠</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">老婆婆</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">银狐</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">紫灰色龙猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">纯白色龙猫</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">土拨鼠</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">巨型安哥拉兔</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">日本飞鼠</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">岩松鼠</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">波兰兔</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">香槟兔</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">玉桂兔</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">英种小型兔</a></li>
+					<span class="limore"><a href="#" class="limore">更多>></a></span>
+			    </ul>
+			    
+			</div>
+		</div>
+		<div class="content_1_right">
+			<div class="content_1_1">
+			   <div class="dogimg">
+			   <a href="#">
+				<img src="images/longmao.jpg"></a>
+			   </div>
+				<div class="dogname">
+					<a href="#">纯白色龙猫 </a>
+				</div>
+			</div>
+			<div class="content_1_1">
+				<div class="dogimg">
+			   <a href="#">
+				<img src="images/tu.jpg"></a>
+			   </div>
+				<div class="dogname">
+					<a href="#">法国垂耳兔</a>
+				</div>
+			</div>
+			<div class="more">
+			<div class="jiantou">
+				<img src="images/jiantou.png">
+			</div>
+			<div class="dogmore">
+				<a href="#"><img src="images/moredog.png"></a>
+			</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+			<div class="content_1">
+		<div class="content_1_left">
+			<div class="content_1_img">
+				<a href="#"><img src="images/yubiao.png"></a>
+			</div>
+			<div class="content_1_li">
+			<input type="text" name="sousuo">
+			<input type="button" name="搜索" value="搜索" class="sousuo">
+				<ul class="content_1_left">
+					<li class="dog"><a href="#">包金狮头鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">黄金锦鲤</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">黑兰寿鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">头尾灯鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">鹤顶红鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">花水泡鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">六间蝶鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">四绒球鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">复活岛神仙鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">红绿灯鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">双带小丑鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">十二蓝珍珠鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">七彩吊</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">蓝面神仙鱼</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">巧克力吊</a></li>
+					<li class="shugang">|</li>
+					<li class="dog"><a href="#">九间吊</a></li>
+					<li class="shugang">|</li>
+					<span class="limore"><a href="#" class="limore">更多>></a></span>
+			    </ul>
+			    
+			</div>
+		</div>
+		<div class="content_1_right">
+			<div class="content_1_1">
+			   <div class="dogimg">
+			   <a href="#">
+				<img src="images/qcd.jpg"></a>
+			   </div>
+				<div class="dogname">
+					<a href="#">七彩吊 </a>
+				</div>
+			</div>
+			<div class="content_1_1">
+				<div class="dogimg">
+			   <a href="#">
+				<img src="images/xcy.jpg"></a>
+			   </div>
+				<div class="dogname">
+					<a href="#">双带小丑鱼</a>
+				</div>
+			</div>
+			<div class="more">
+			<div class="jiantou">
+				<img src="images/jiantou.png">
+			</div>
+			<div class="dogmore">
+				<a href="#"><img src="images/moredog.png"></a>
+			</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+</div>
+<!--footer-->
+<div id="footer">
+<div class="footer_li">
+    <ul class="footer">
+        <li class="foot_1">推荐连接</li>
+        <li>
+        <img src="images/tianmao.png"><a href="https://618.tmall.com/?ali_trackid=2:mm_28347190_2425761_40292235:1497536136_2k2_864047337">天猫商城</a></li>
+        <li>
+        <img src="images/taobao.png"><a href="https://tyh.taobao.com/?ali_trackid=2:mm_30646014_17540794_73582572:1497536217_3k5_43983250#a=&c=0&q=&s=0&page=1&">淘宝官网</a></li>
+        <li>
+        <img src="images/jingdong.png"><a href="http://gou.jd.com/?cu=true&utm_source=e.firefoxchina.cn&utm_medium=uniongou&utm_campaign=t_220520384_&utm_term=e028d7da356a4d49bcc47e51be81c073&abt=3">京东官网</a></li>
+    </ul>
+</div>
+<div class="footer_xinxi">
+    <p class="footer">Copyright [17/6/10] by [cqajh]</p>
+    <p class="ads">地址：河北师范大学</p>
+    <p class="owner">版权所属，请勿侵权</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>爱宠俱乐部</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{
+		background-color: #fffffd;
+	}
+	a{
+		text-decoration: none;
+		color: #522a06;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+		#header{
+			width: 1000px;
+			height: 300px;
+			margin: 0 auto;
+		}
+		div.banner{
+			background-image: url(images/banner.png);
+			width: 1000px;
+			height: 300px;
+			margin: 0 auto;
+			float: none;
+		}
+		}
+		div.nav{
+			width: 1000px;
+			height: 25px;
+			position: relative;
+			text-align: center;
+			margin: 0;
+		}
+		li.nav{
+			display: inline-block;
+			padding: 10px;
+			float: left;
+			position: relative;
+			top: 10px;
+		}
+		.img{
+			display: inline-block;
+			float: left;
+		}
+		a.nav{
+			text-decoration: none;
+		}
+		a.nav:hover{
+			color: #522a06;
+			font-size: 18px;
+		}
+		#content{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		div.content_left{
+			width: 450px;
+			height: 300px;
+			background-image: url(images/li-bg.jpg);
+			float: left;
+			border: 1px solid gray;
+			margin-top: 10px;
+			margin-left: 10px;
+		}
+		ul.content_left{
+			width: 450px;
+			height: 300px;
+			line-height: 40px;
+			float: none;
+		}
+		a.content_left{
+			text-decoration: none;
+			color: #522a06;
+		}
+		a.content_left:hover{
+			font-size: 20px;
+		}
+		div.aczs_title{
+			float: left;
+			width: 430px;
+			height: 40px;
+		}
+		div.aczs_list{
+			float: left;
+			width: 300px;
+			height: 300px;
+		}
+		img.aczs{
+			position: relative;
+			top: 10px;
+		}
+		span.aczs{
+			font-size: 22px;
+			font-weight: 600;
+			word-spacing: 30px;
+			color: #ec870e;
+		}
+		img.more{
+			float: right;
+		}
+		#lunbo ul li:not(:first-child){
+        display: none;
+    }
+    li.lunbo{
+        list-style: none;
+    }
+    ul.lunbo{
+        position: relative;
+        top: 20px;
+        left: 2px;
+    }
+    p.lunbo{
+        margin: 0;
+        text-align: center;
+    }
+    #lunbo{
+        width: 280px;
+        height: 300px;
+        padding: 0px;
+        background-image: url(images/lunbo1.jpg);
+        float: left;
+        margin: 10px;
+        color: #522a06;
+    }
+    div.lunbo_title{
+        position: relative;
+        top: 30px;
+        left: 35px;
+        color: #7388ce;
+        font-size: 16px;
+    }
+    div.content_right{
+    	width: 236px;
+    	height: 300px;
+    	float: right;
+    	background-image: url(images/wyt.jpg);
+    	margin-top:10px; 
+    }
+    div.right_title{
+    	position: relative;
+    	left: 28px;
+    	top: 20px;
+    }
+    span.right_title{
+    	position: relative;
+    	top: -20px;
+    	font-weight: 600;
+    }
+    p.right{
+    	margin: 0;
+    }
+    div.right{
+    	width: 150px;
+    	position: relative;
+    	top: 25px;
+    	left: 45px;
+    	text-align: center;
+    }
+    .button{
+    	width: 40px;
+    	height: 20px;
+    	background-color: #FCD9C4;
+    }
+    a.wyt{
+    	text-decoration: none;
+    	color: #522a06;
+    }
+    a.wyt:hover{
+    	text-decoration: underline;
+    }
+    div.content201{
+        clear: both;
+    	background-image: url(images/news_bg.jpg);
+    	width: 500px;
+    	height: 440px;
+    	float: left;
+    }
+    div.news1{
+    	position: relative;
+    	top: 30px;
+    	left: 140px;
+    	width: 340px;
+    }
+    span.news1{
+    	position: relative;
+    	top: -20px;
+    	color: #945305;
+    	font-weight: 600;
+    	font-size: 25px;
+    }
+    a.news{
+    	color: red;
+    }
+    a.news:hover{
+    	text-decoration: underline;
+    }
+    div.li{
+    	position: relative;
+    	top: 25px;
+    	left: 60px;
+    	line-height: 30px;
+    }
+    a.li:hover{
+    	font-size: 20px;
+    	text-decoration: none;
+    }
+    div.content202{
+        width: 500px;
+        height: 440px;
+        float: left; 
+    }
+    span.content202{
+    	font-size: 25px;
+    	color: #00a6ad;
+    	position: relative;
+    	top: -20px;
+    }
+    span.serach{
+        position: relative;
+        top: -25px;
+        left: 90px;
+    }
+    span.shopping{
+    	font-size: 10px;
+    	color: gray;
+    	float: right;
+    	position: relative;
+    	top: 50px;
+    }
+        #container { width: 500px; height: 350px; border: 3px solid #333; overflow: hidden; position: relative;}
+        #list { width: 3500px; height: 350px; position: absolute; z-index: 1;}
+        #list img { float: left;}
+        #buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 250px;}
+        #buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+        #buttons .on {  background: orangered;}
+        .arrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 180px; background-color: RGBA(0,0,0,.3); color: #fff;}
+        .arrow:hover { background-color: RGBA(0,0,0,.7);}
+        #container:hover .arrow { display: block;}
+        #prev { left: 20px;}
+        #next { right: 20px;}
+
+
+        #footer{
+            width: 1000px;
+            height: 200px;
+            border-top: 1px solid gray;
+            background-image: url(images/footer.jpeg);
+            clear: both;
+            margin: 0 auto;
+        }
+        p.footer{
+            text-align: center;
+            line-height: 30px;
+        }
+        ul.footer{
+            line-height: 30px;
+            list-style: none;
+            color: gray;
+        }
+        li.foot_1{
+            font-size: 25px;
+        }
+        div.footer_li{
+            margin: 20px;
+            width: 200px;
+            height: 150px;
+            float: left;
+        }
+        div.footer_xinxi{
+            width: 400px;
+            height: 150px;
+            float: left;
+            margin: 20px;
+        }
+        p.ads{
+            text-align: center;
+            line-height: 30px;
+        }
+        p.owner{
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+    <script type="text/javascript">
+
+        window.onload = function () {
+            var container = document.getElementById('container');
+            var list = document.getElementById('list');
+            var buttons = document.getElementById('buttons').getElementsByTagName('span');
+            var prev = document.getElementById('prev');
+            var next = document.getElementById('next');
+            var index = 1;
+            var len = 5;
+            var animated = false;
+            var interval = 3000;
+            var timer;
+
+
+            function animate (offset) {
+                if (offset == 0) {
+                    return;
+                }
+                animated = true;
+                var time = 300;
+                var inteval = 10;
+                var speed = offset/(time/inteval);
+                var left = parseInt(list.style.left) + offset;
+
+                var go = function (){
+                    if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
+                        list.style.left = parseInt(list.style.left) + speed + 'px';
+                        setTimeout(go, inteval);
+                    }
+                    else {
+                        list.style.left = left + 'px';
+                        if(left>-200){
+                            list.style.left = -500 * len + 'px';
+                        }
+                        if(left<(-600 * len)) {
+                            list.style.left = '-500px';
+                        }
+                        animated = false;
+                    }
+                }
+                go();
+            }
+
+            function showButton() {
+                for (var i = 0; i < buttons.length ; i++) {
+                    if( buttons[i].className == 'on'){
+                        buttons[i].className = '';
+                        break;
+                    }
+                }
+                buttons[index - 1].className = 'on';
+            }
+
+            function play() {
+                timer = setTimeout(function () {
+                    next.onclick();
+                    play();
+                }, interval);
+            }
+            function stop() {
+                clearTimeout(timer);
+            }
+
+            next.onclick = function () {
+                if (animated) {
+                    return;
+                }
+                if (index == 5) {
+                    index = 1;
+                }
+                else {
+                    index += 1;
+                }
+                animate(-500);
+                showButton();
+            }
+            prev.onclick = function () {
+                if (animated) {
+                    return;
+                }
+                if (index == 1) {
+                    index = 5;
+                }
+                else {
+                    index -= 1;
+                }
+                animate(600);
+                showButton();
+            }
+
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function () {
+                    if (animated) {
+                        return;
+                    }
+                    if(this.className == 'on') {
+                        return;
+                    }
+                    var myIndex = parseInt(this.getAttribute('index'));
+                    var offset = -500 * (myIndex - index);
+
+                    animate(offset);
+                    index = myIndex;
+                    showButton();
+                }
+            }
+
+            container.onmouseover = stop;
+            container.onmouseout = play;
+
+            play();
+
+        }
+    </script>
+</head>
+<body>
+<!--header-->
+<div id="header">
+		<div class="nav">
+			<!--导航栏-->
+			<img src="images/f1.jpg" class="img">
+			<ul class="nav">
+				<li class="nav"><a href="#" class="nav">爱宠主页</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="file:///E:/2016-2017/web一/爱宠网/列表页.html" class="nav">宠物种类</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">宠物商店</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">爱宠医院</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">宠物乐园</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">爱宠保养</a></li>
+				<li class="nav">|</li>
+				<li class="nav"><a href="#" class="nav">寻找爱宠</a></li>
+			</ul>
+		</div>
+	<div class="banner">
+    </div>
+</div>
+
+<!--content-->
+<div id="content">
+<!--content_left-->
+<div id="lunbo">
+     <div class="lunbo_title"> 
+         <img src="images/lunbo_title.png">
+        爱宠趣事
+     </div>
+     <div>
+         <ul class="lunbo">
+             <li class="lunbo"><img src="images/01.jpg">
+             <p class="lunbo"><a href="#">给你一个爱的抚摸</a></p>
+             </li>
+             <li class="lunbo"><img src="images/02.jpg">
+             <p class="lunbo"><a href="#">主银~送你一朵小fa~</a></p></li>
+             <li class="lunbo"><img src="images/03.jpg">
+             <p class="lunbo"><a href="#">看不见我看不见我~</a></p></li>
+             <li class="lunbo"><img src="images/05.jpg">
+             <p class="lunbo"><a href="#">宝宝乖~妈妈给你舔舔</a></p></li>
+         </ul>
+     </div>
+    <script type="text/javascript">
+    //因为使用了document，所以js需要放在需要执行的代码下面生效才能生效
+    var li=document.getElementById('lunbo').getElementsByTagName("li");
+    var num=0;
+    var len=li.length;
+
+    setInterval(function(){
+        li[num].style.display="none";
+        num=++num==len?0:num;
+        li[num].style.display="inline-block";
+
+    },3000);//切换时间
+    </script>
+    </div>
+    <div class="content_left">
+	     <div class="aczs_title">
+	         <img src="images/aczs1.jpg" class="aczs">
+	         <span class="aczs">爱宠小知识~</span>
+	         <a href="#"><img src="images/more.png" class="more"></a>
+	         <hr>
+	     </div>
+	     <div class="aczs_list">
+		     <ul class="content_left">
+		         <li><a href="" class="content_left">猫咪的日常营养基本需求</a></li>
+			     <li><a href="" class="content_left">
+		         零食容易导致猫猫过度肥胖</a></li>
+			     <li><a href="" class="content_left">为什么狗狗喜欢与主人同睡？</a></li>
+			     <li><a href="" class="content_left">宠物狗狗咆哮的表达意义翻译</a></li>
+			     <li><a href="" class="content_left">怎么判断猫猫已经怀孕？</a></li>
+			     <li><a href="" class="content_left">让狗狗安静下来只需要......</a></li>
+		     </ul>
+	     </div>
+    </div>
+    <div class="content_right">
+    	<div class="right_title">
+    		<img src="images/xinyubai.jpg">
+    		<span class="right_title">我与“他”</span>
+    	</div>
+    	<div class="right">
+    		<a href="#"><img src="images/xizao.jpg"alt="图片" /></a>
+    		<a href="#" class="wyt"><p class="right">汪汪太脏了~宝贝说要去帮汪汪洗澡，结果拿起来了我的冲车水管。。。。</p></a>
+    		<a href="#"><input type="button" name="更多" value="更多" class="button"></a>
+    	</div>
+    </div>
+
+    <div class="content201">
+    <div class="news1">
+    <span class="news1">爱宠大新闻！！！</span><img src="images/news2.jpg" />
+    <hr>
+    </div>
+    <div class="li">
+    <h4><a href="#" class="news">狗狗因长癣遭抛弃，被好心人救下，半个月后：捡到宝！</a></h4>
+    <ul>
+    	<li><a href="#" class="li">狗狗因长癣遭抛弃，被好心人救下，...</a></li>
+    	<li><a href="#" class="li">宠物狗被轧死，两女子当街边大哭，...</a></li>
+    	<li><a href="#" class="li">温州一学生网购一条毒蛇当宠物，被...</a></li>
+    	<li><a href="#" class="li">托运金毛被打伤，为啥国内托运风险...</a></li>
+    	<li><a href="#" class="li">呆萌小野猪掉进山沟，被好心人收养...</a></li>
+    	<li><a href="#" class="li">印度女子“爱蛛成痴”，养1500只狼猪...</a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="content202">
+    <img src="images/yongpin.jpg">
+        <span class="content202">爱宠宝贝淘</span>
+        <span class="serach">
+        <input type="text" name="搜索">
+        <input type="submit" name="搜索" value="搜索">
+        </span>
+        <span class="shopping"><a href="#">点击进入宠物商城</a></span>
+        <hr>
+    <div id="container">
+    <div id="list" style="left: -500px;">
+        <img src="images/15.jpg" alt="1"/>
+        <img src="images/11.jpg" alt="1"/>
+        <img src="images/12.jpg" alt="2"/>
+        <img src="images/13.jpg" alt="3"/>
+        <img src="images/14.jpg" alt="4"/>
+        <img src="images/15.jpg" alt="5"/>
+        <img src="images/11.jpg" alt="5"/>
+    </div>
+    <div id="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+    </div>
+    <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    <a href="javascript:;" id="next" class="arrow">&gt;</a>
+    </div>
+</div>
+</div>
+<hr class="fjx">
+<!--footer-->
+<div id="footer">
+<div class="footer_li">
+    <ul class="footer">
+        <li class="foot_1">推荐连接</li>
+        <li>
+        <img src="images/tianmao.png"><a href="https://618.tmall.com/?ali_trackid=2:mm_28347190_2425761_40292235:1497536136_2k2_864047337">天猫商城</a></li>
+        <li>
+        <img src="images/taobao.png"><a href="https://tyh.taobao.com/?ali_trackid=2:mm_30646014_17540794_73582572:1497536217_3k5_43983250#a=&c=0&q=&s=0&page=1&">淘宝官网</a></li>
+        <li>
+        <img src="images/jingdong.png"><a href="http://gou.jd.com/?cu=true&utm_source=e.firefoxchina.cn&utm_medium=uniongou&utm_campaign=t_220520384_&utm_term=e028d7da356a4d49bcc47e51be81c073&abt=3">京东官网</a></li>
+    </ul>
+</div>
+<div class="footer_xinxi">
+    <p class="footer">Copyright [17/6/10] by [cqajh]</p>
+    <p class="ads">地址：河北师范大学</p>
+    <p class="owner">版权所属，请勿侵权</p>
+</div>
+</div>
+</body>
+</html>
